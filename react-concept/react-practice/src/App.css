@@ -1,0 +1,58 @@
+.rashindra {
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  color: red;
+  border: 1px solid blue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Fade In Animation (optional use) */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.25;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Bouncing Ball Animation */
+@keyframes bouncingBall {
+  from {
+    transform: translateY(-20px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.loadingSpinner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid rgba(128, 128, 128, 0.3);
+  /* highlight one side */
+  border-top: 3px solid blue;
+  animation: loadingSpinner 1s linear infinite;
+}
+
+@keyframes loadingSpinner {
+   from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
